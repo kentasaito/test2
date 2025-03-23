@@ -4,8 +4,7 @@
     "test": "deno fmt --check && deno lint && deno test",
     "commit": "deno task test && git add -A && git commit --allow-empty-message -m ''",
     "merge": "git checkout main && git merge --squash dev && deno task test && git add -A && git commit --allow-empty-message -m '' && git branch -D dev && git branch dev && git checkout dev",
-    "transpile": "mkdir -p ./dist/ && deno -A npm:esbuild@0.25.1 ./src/Indentdown.ts > ./dist/indentdown.js && sed -i '1i/* Indentdown 0.0.1 - https:\/\/indentdown.deno.dev */' ./dist/indentdown.js && deno fmt ./dist/indentdown.js",
-    "release": "sh release.sh"
+    "transpile": "mkdir -p ./dist/ && deno -A npm:esbuild@0.25.1 ./src/Indentdown.ts > ./dist/indentdown.js && sed -i '1i/* Indentdown 0.0.1 - https:\/\/indentdown.deno.dev */' ./dist/indentdown.js && deno fmt ./dist/indentdown.js"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
