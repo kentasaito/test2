@@ -1,4 +1,8 @@
 .gitignore
 deno.json
+.github/
 .vscode/
+dist/
 src/
+tasks/
+tests/

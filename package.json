@@ -2,6 +2,14 @@
   "lock": false,
   "name": "indentdown",
   "version": "0.0.3",
+  "displayName": "Indentdown live preview",
+  "publisher": "kenta-saito",
+  "description": "A lightweight markup language",
+  "icon": "./assets/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentasaito/test2"
+  },
   "engines": {
     "vscode": "^1.98.0"
   },

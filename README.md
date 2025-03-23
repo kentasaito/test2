@@ -12,7 +12,7 @@ About "Indentdown live preview" for Visual Studio Code, see:\
 
 ```HTML
 <script type="module">
-  import { Indentdown } from "./Indentdown.min.js";
+  import { Indentdown } from "./Indentdown.js";
   console.log(Indentdown.getHtml("Header\n  paragraph"));
 </script>
 ```
@@ -27,9 +27,13 @@ console.log(Indentdown.getHtml("Header\n  paragraph"));
 ### CLIs
 
 ```sh
-$ mv indentdown.x86_64-unknown-linux-gnu indentdown
-$ chmod +x ./indentdown
-$ echo -e "Header\n  paragraph" | ./indentdown
+$ echo -e 'Header\n  Paragraph' | deno run ./indentdown.ts
+```
+
+or
+
+```sh
+$ deno run --allow-read ./indentdown.ts ./test.id
 ```
 
 ## Links
