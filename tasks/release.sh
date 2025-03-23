@@ -15,3 +15,4 @@ deno task merge
 git push origin main
 git tag $NEWVERSION
 git push origin $NEWVERSION
+git checkout dev

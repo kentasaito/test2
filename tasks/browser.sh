@@ -1,6 +1,6 @@
 VERSION=`deno task version` &&
 DIRNAME=./dist/$VERSION/browser
-FILENAME=$DIRNAME/indentdown-$VERSION.js
+FILENAME=$DIRNAME/indentdown.js
 if [ -e $FILENAME ]
 then
   echo "$FILENAME already exists (skipped)"

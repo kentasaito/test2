@@ -1,5 +1,6 @@
+/* Indentdown 0.0.2 - https://indentdown.deno.dev */
 import { parseArgs } from "jsr:@std/cli@1.0.14/parse-args";
-import { Indentdown } from "./Indentdown.ts";
+import { Indentdown } from "jsr:@kenta/test2@0.0.2";
 
 const args = parseArgs(Deno.args, {
   alias: {
@@ -22,7 +23,7 @@ Full documentation <https://indentdown.deno.dev>
 }
 
 if (args.version) {
-  console.log("Indentdown $VERSION");
+  console.log("Indentdown 0.0.2");
   Deno.exit();
 }
 
