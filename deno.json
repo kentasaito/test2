@@ -2,6 +2,7 @@
   "lock": false,
   "tasks": {
     "test": "deno fmt --check && deno lint && deno test",
+    "commit": "deno task test && git add -A && git commit --allow-empty-message -m ''",
     "push": "deno task test && git push",
     "transpile": "mkdir -p ./dist/ && deno -A npm:esbuild@0.25.1 ./src/Indentdown.ts > ./dist/Indentdown.js && deno fmt ./dist/Indentdown.js",
     "release": "sh release.sh"
