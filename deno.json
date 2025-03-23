@@ -1,6 +1,10 @@
 {
+  "lock": false,
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "test": "deno fmt --check && deno lint && deno test",
+    "push": "deno task test && git push",
+    "transpile": "mkdir -p ./dist/ && deno -A npm:esbuild@0.25.1 ./src/Indentdown.ts > ./dist/Indentdown.js && deno fmt ./dist/Indentdown.js",
+    "release": "sh release.sh"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
