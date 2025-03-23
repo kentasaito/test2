@@ -5,7 +5,8 @@
     "test": "deno fmt --check && deno lint && deno test",
     "commit": "deno task test && git add -A && git commit --allow-empty-message -m ''",
     "merge": "sh ./tasks/merge.sh",
-    "transpile": "sh ./tasks/transpile.sh",
+    "browser": "sh ./tasks/browser.sh",
+    "runtime": "sh ./tasks/runtime.sh",
     "release": "sh ./tasks/release.sh"
   },
   "imports": {
