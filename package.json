@@ -1,0 +1,36 @@
+{
+  "lock": false,
+  "name": "indentdown",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "indentdown.preview",
+        "title": "Preview",
+        "icon": "$(open-preview)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "resourceExtname == .id",
+          "command": "indentdown.preview",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "indentdown.preview",
+        "key": "alt+i"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0"
+  }
+}

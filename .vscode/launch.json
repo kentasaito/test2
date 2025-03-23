@@ -1,0 +1,9 @@
+{
+  "configurations": [
+    {
+      "name": "Launch Extension",
+      "preLaunchTask": "build_ts",
+      "type": "extensionHost"
+    }
+  ]
+}

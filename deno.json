@@ -8,6 +8,8 @@
     "browser": "sh ./tasks/browser.sh",
     "runtime": "sh ./tasks/runtime.sh",
     "cli": "sh ./tasks/cli.sh",
+    "build": "deno -A jsr:@kt3k/pack@0.1.14 ./src/extension.ts -o ./extension.js --external vscode --format cjs",
+    "vscode": "sh ./tasks/vscode.sh",
     "release": "sh ./tasks/release.sh"
   },
   "imports": {
