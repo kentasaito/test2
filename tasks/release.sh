@@ -11,4 +11,4 @@ deno task browser
 deno task runtime
 deno task commit
 deno task merge
-# git push origin main
+git push origin main
