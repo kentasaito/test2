@@ -13,14 +13,14 @@
     "@std/assert": "jsr:@std/assert@1"
   },
   "name": "@kenta/test2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
-  "exports": "./dist/0.0.1/runtime/Indentdown.ts",
+  "exports": "./dist/0.0.2/runtime/Indentdown.ts",
   "publish": {
     "include": [
       "./LICENSE.txt",
       "./README.md",
-      "./dist/0.0.1/runtime/Indentdown.ts"
+      "./dist/0.0.2/runtime/Indentdown.ts"
     ]
   }
 }
