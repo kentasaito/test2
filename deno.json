@@ -7,6 +7,7 @@
     "merge": "sh ./tasks/merge.sh",
     "browser": "sh ./tasks/browser.sh",
     "runtime": "sh ./tasks/runtime.sh",
+    "cli": "sh ./tasks/cli.sh",
     "release": "sh ./tasks/release.sh"
   },
   "imports": {
