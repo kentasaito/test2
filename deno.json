@@ -20,7 +20,10 @@
     "include": [
       "./LICENSE.txt",
       "./README.md",
-      "./src/Indentdown.ts"
+      "./dist/0.0.1/runtime/Indentdown.ts"
+    ],
+    "exclude": [
+      "./deno.json"
     ]
   }
 }
