@@ -15,15 +15,12 @@
   "name": "@kenta/test2",
   "version": "0.0.1",
   "license": "MIT",
-  "exports": "./src/Indentdown.ts",
+  "exports": "./dist/0.0.1/runtime/Indentdown.ts",
   "publish": {
     "include": [
       "./LICENSE.txt",
       "./README.md",
       "./dist/0.0.1/runtime/Indentdown.ts"
-    ],
-    "exclude": [
-      "./deno.json"
     ]
   }
 }

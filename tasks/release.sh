@@ -10,6 +10,8 @@ sed -i 's/  "version": "'$CURRENTVERSION'"/  "version": "'$NEWVERSION'"/' ./deno
 sed -i 's/dist\/'$CURRENTVERSION'/dist\/'$NEWVERSION'/' ./deno.json &&
 deno task browser
 deno task runtime
-#deno task commit
-#deno task merge
-#git push origin main
+deno task commit
+deno task merge
+git push origin main
+git tag $NEWVERSION
+git push origin $NEWVERSION
