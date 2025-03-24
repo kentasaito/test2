@@ -10,13 +10,14 @@ sed -i 's/  "version": "'$CURRENTVERSION'"/  "version": "'$NEWVERSION'"/' ./deno
 sed -i 's/dist\/'$CURRENTVERSION'/dist\/'$NEWVERSION'/' ./deno.json &&
 sed -i 's/  "version": "'$CURRENTVERSION'"/  "version": "'$NEWVERSION'"/' ./package.json &&
 sed -i 's/dist\/'$CURRENTVERSION'/dist\/'$NEWVERSION'/' ./package.json &&
-deno task browser
-deno task runtime
-deno task cli
-deno task vscode
-deno task commit
-deno task merge
-git push origin main
-git tag $NEWVERSION
+sed -i 's/indentdown-'$CURRENTVERSION'/indentdown-'$NEWVERSION'/g' ./site/id/download.id &&
+sed -i 's/dist\/'$CURRENTVERSION'/dist\/'$NEWVERSION'/' ./site/id/download.id &&
+deno task browser &&
+deno task runtime &&
+deno task cli &&
+deno task vscode &&
+deno task commit &&
+deno task merge &&
+git push origin main &&
+git tag $NEWVERSION &&
 git push origin $NEWVERSION
-git checkout dev

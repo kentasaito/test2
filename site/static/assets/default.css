@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 720px;
+}
+
+a {
+  color: hsl(210, 50%, 40%);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  > * {
+    height: 3rem;
+    align-items: center;
+  }
+  > a {
+    height: 3rem;
+    align-items: center;
+  }
+  > a > img {
+    height: 3rem;
+  }
+  > div {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+  }
+}
+
+svg {
+  vertical-align: top;
+}

@@ -10,7 +10,8 @@
     "cli": "sh ./tasks/cli.sh",
     "build": "deno -A jsr:@kt3k/pack@0.1.14 ./src/extension.ts -o ./extension.js --external vscode --format cjs",
     "vscode": "sh ./tasks/vscode.sh",
-    "release": "sh ./tasks/release.sh"
+    "release": "sh ./tasks/release.sh",
+    "serve": "deno run -A --watch ./main.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
@@ -25,5 +26,16 @@
       "./README.md",
       "./dist/0.0.3/runtime/Indentdown.ts"
     ]
+  },
+  "deploy": {
+    "project": "indentdown",
+    "include": [
+      "./assets/",
+      "./dist/",
+      "./site/",
+      "./src/Indentdown.ts",
+      "./main.ts"
+    ],
+    "entrypoint": "./main.ts"
   }
 }

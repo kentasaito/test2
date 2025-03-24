@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url(./MPLUSRounded1c/MPLUSRounded1c-Regular.ttf) format("truetype");
+}
+
+* {
+  font-family: "M PLUS Rounded 1c";
+}
+
+a {
+  color: hsl(210, 50%, 50%);
+  text-decoration: none;
+}

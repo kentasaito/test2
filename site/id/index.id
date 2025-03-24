@@ -1,0 +1,6 @@
+Indentdown
+  Indentdownは軽量マークアップ言語です。
+  ブラウザ、ランタイム、CLI、Visual Studio Code上で動作します。
+
+  <small><i>Visual Studio Code拡張機能のIndentdown live prview</i></small>
+  <img src="./assets/open-preview-panel.gif" style="width:100%;">

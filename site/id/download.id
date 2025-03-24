@@ -1,0 +1,34 @@
+ダウンロード
+  Visual Studio Code 拡張機能 - Indentdown live preview
+    通常は<a href="https://marketplace.visualstudio.com/items?itemName=KentaSaito.indentdown">Visual Studio Marketplace</a>からインストールしてください。
+    <pre>
+      "拡張機能" #> "VSIX からのインストール"
+    </pre>
+    <a href="./dist/0.0.3/vscode/indentdown-0.0.3.vsix">indentdown-0.0.3.vsix</a>
+
+  ブラウザ用JavaScript
+    <pre>
+      #<script type="module">
+        import { Indentdown } from "./Indentdown.js";
+        console.log(Indentdown.getHtml("Header\n  paragraph"));
+      #</script#>
+    </pre>
+    <a href="./dist/0.0.3/browser/Indentdown.js" download>Indentdown.js</a>
+
+  ランタイム用TypeScript
+    通常は<a href="https://jsr.io/@kenta/test">JSR</a>からインポートしてください。
+    <pre>
+      import { Indentdown } from "jsr:@kenta/test2";
+      console.log(Indentdown.getHtml("Header\n  paragraph"));
+    </pre>
+    <a href="./dist/0.0.3/runtime/Indentdown.ts">Indentdown.ts</a>
+
+  CLI用TypeScript
+    <pre>
+      $ echo -e 'Header\n  Paragraph' | deno run ./indentdown.ts
+    </pre>
+    または
+    <pre>
+      $ deno run --allow-read ./indentdown.ts ./test.id
+    </pre>
+    <a href="./dist/0.0.3/cli/indentdown.ts">indentdown.ts</a>

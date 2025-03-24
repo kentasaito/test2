@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+html {
+  height: 100%;
+  font-size: 20px;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+pre {
+  overflow: scroll;
+}
+
+body {
+  height: 100%;
+  max-width: 1080px;
+  min-width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  > * {
+    padding: 0.75rem;
+  }
+}
+
+/**
+ * ブロックレベル要素
+ * footer, form, h1, h2, h3, h4, h5, h6, li, header, hrを除く
+ * textareaを含む
+ */
+main {
+  address,
+  article,
+  aside,
+  blockquote,
+  canvas,
+  dd,
+  div,
+  dl,
+  dt,
+  fieldset,
+  figcaption,
+  figure,
+  main,
+  nav,
+  noscript,
+  ol,
+  p,
+  pre,
+  section,
+  table,
+  tfoot,
+  ul,
+  video,
+  textarea {
+    margin-bottom: 1.5rem;
+  }
+  div {
+    margin-left: 0.75rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    border-bottom: 1px solid #000;
+  }
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+textarea {
+  font-family: monospace;
+}
+
+header, footer {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+@media (width >= 720px) {
+  main {
+    width: 720px;
+    margin: 0 auto auto;
+    overflow-y: scroll;
+  }
+}
+
+header {
+  padding: 0 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  > *:first-child {
+    flex-shrink: 0;
+    > svg {
+      height: 2rem;
+      vertical-align: top;
+    }
+  }
+  > *:last-child {
+    padding: 0.75rem 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: flex;
+    gap: 0.75rem;
+  }
+}

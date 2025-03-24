@@ -20,7 +20,7 @@ About "Indentdown live preview" for Visual Studio Code, see:\
 ### Runtimes
 
 ```TypeScript
-import { Indentdown } from "jsr:@kenta/test";
+import { Indentdown } from "jsr:@kenta/test2";
 console.log(Indentdown.getHtml("Header\n  paragraph"));
 ```
 
@@ -42,9 +42,10 @@ $ deno run --allow-read ./indentdown.ts ./test.id
   - Syntax: https://indentdown.deno.dev/syntax.html
   - Demo: https://indentdown.deno.dev/demo.html
   - Downloads: https://indentdown.deno.dev/download.html
-- JSR: https://jsr.io/@kenta/test
-- GitHub: https://github.com/kentasaito/test
-- Visual Studio Marketplace: In preparation
+- JSR: https://jsr.io/@kenta/test2
+- GitHub: https://github.com/kentasaito/test2
+- Visual Studio Marketplace:
+  https://marketplace.visualstudio.com/items?itemName=KentaSaito.indentdown
 
 ## Indentdown live preview for Visual Studio Code
 

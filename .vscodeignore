@@ -1,8 +1,10 @@
-.gitignore
-deno.json
-.github/
-.vscode/
 dist/
+site/
 src/
 tasks/
 tests/
+.github/
+.vscode/
+deno.json
+main.ts
+.gitignore
